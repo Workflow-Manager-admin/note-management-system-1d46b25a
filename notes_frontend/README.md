@@ -27,7 +27,27 @@ Launches the test runner in interactive watch mode.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Customization
+## Environment Setup
+
+### Connecting to Supabase
+
+This app requires Supabase credentials to function. You **must** create a `.env` file in this folder using the `.env.sample` as a template.
+
+1. Copy `.env.sample` to `.env`:
+
+   ```
+   cp .env.sample .env
+   ```
+
+2. Set your values for:
+   - `REACT_APP_SUPABASE_URL`
+   - `REACT_APP_SUPABASE_KEY`
+
+   The `.env.sample` includes working sample values matching the project.
+
+**Note:** The variable names **must** begin with `REACT_APP_` for React to access them at build time. Do not use variable names without this prefix.
+
+3. Restart your development server after editing `.env`.
 
 ### Colors
 
